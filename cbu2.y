@@ -260,7 +260,6 @@ void dwgen()
 	fprintf(fp, "HALT\n");
 	fprintf(fp, "$ -- END OF EXECUTION CODE AND START OF VAR DEFINITIONS --\n");
 
-// Warning: this code should be different if variable declaration is supported in the language 
 	for(i=0; i<maxsym; i++) 
 		fprintf(fp, "DW %s\n", symtbl[i]);
 	fprintf(fp, "END\n");
